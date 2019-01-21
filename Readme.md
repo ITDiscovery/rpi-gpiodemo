@@ -3,13 +3,12 @@ It contains demo code to show how to interface to various hardware
 
 The current demo RPi is an RPi Zero W with the following pinouts:
 
- | Use      | BCM |   Name  | Mode | V | Physical | V1 |Mode 1| Name1   | BCM1| Use1   |
+ | Use      | BCM |   Name  | Mode | V | Physical | V |Mode| Name   | BCM| Use   |
  |---|---|---|---|---|---|---|---|---|---|---|
-
  |  | |   -3.3v | | - |  1 || 2  | - |  | 5v      |     |        |
- | 3xs SDA  |   2 |   SDA.1 | ALT0 | 1 |  3 || 4  |   |      | 5V      |     |        |\
- | 3xs SCL  |   3 |   SCL.1 | ALT0 | 1 |  5 || 6  |   |      | 0v      |     |        |\
- |          |   4 | GPIO. 7 |   IN | 1 |  7 || 8  | 1 | ALT0 | TxD     | 14  |        |\
+ | 3xs SDA  |   2 |   SDA.1 | ALT0 | 1 |  3 || 4  |   |      | 5V      |     |        |
+ | 3xs SCL  |   3 |   SCL.1 | ALT0 | 1 |  5 || 6  |   |      | 0v      |     |        |
+ |          |   4 | GPIO. 7 |   IN | 1 |  7 || 8  | 1 | ALT0 | TxD     | 14  |        |
  |          |     |      0v |      |   |  9 || 10 | 1 | ALT0 | RxD     | 15  |        |\
  |          |  17 | GPIO. 0 |   IN | 0 | 11 || 12 | 0 | IN   | GPIO. 1 | 18  |        |\
  |          |  27 | GPIO. 2 |   IN | 0 | 13 || 14 |   |      | 0v      |     |        |\
