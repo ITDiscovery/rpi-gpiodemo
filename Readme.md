@@ -3,8 +3,8 @@ It contains demo code to show how to interface to various hardware
 
 The current demo RPi is an RPi Zero W with the following pinouts:
 
- +----------+-----+---------+------+---+---Pi 2---+---+------+---------+-----+--------+&nbsp;
- | Use      | BCM |   Name  | Mode | V | Physical | V | Mode | Name    | BCM | Use    |&nbsp;
+ +----------+-----+---------+------+---+---Pi 2---+---+------+---------+-----+--------+\
+ | Use      | BCM |   Name  | Mode | V | Physical | V | Mode | Name    | BCM | Use    |\
  +----------+-----+---------+------+---+----++----+---+------+---------+-----+--------+&nbsp;
  |          |     |    3.3v |      |   |  1 || 2  |   |      | 5v      |     |        |&nbsp;
  | 3xs SDA  |   2 |   SDA.1 | ALT0 | 1 |  3 || 4  |   |      | 5V      |     |        |&nbsp;
