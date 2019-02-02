@@ -8,8 +8,8 @@ The current demo RPi is an RPi Zero W with the following pinouts:
  |         |     |   -3.3v |      | - |  1 - 2  | - |      | 5v      |     |        |
  | 3xs SDA |   2 |   SDA.1 | ALT0 | 1 |  3 - 4  |   |      | 5V      |     |        |
  | 3xs SCL |   3 |   SCL.1 | ALT0 | 1 |  5 - 6  |   |      | Gnd     |     |        |
- | 3LED-R  |   4 | GPIO. 7 |   IN | 1 |  7 - 8  | 1 | ALT0 | TxD     | 14  |        |
- |         |     |    Gnd  |      |   |  9 - 10 | 1 | ALT0 | RxD     | 15  |        |
+ | 3LED-R  |   4 | GPIO. 7 |   IN | 1 |  7 - 8  | 1 | ALT0 | TxD     | 14  |TLC548-c|
+ |         |     |    Gnd  |      |   |  9 - 10 | 1 | ALT0 | RxD     | 15  |TLD548-d|
  | 3LED-G  |  17 | GPIO. 0 |   IN | 0 | 11 - 12 | 0 | IN   | GPIO. 1 | 18  |L298N-1 |
  | 3LED-B  |  27 | GPIO. 2 |   IN | 0 | 13 - 14 |   |      | Gnd     |     |        |
  | DSP4-d  |  22 | GPIO. 3 |   IN | 0 | 15 - 16 | 0 | IN   | GPIO. 4 | 23  |L298N-2 |
