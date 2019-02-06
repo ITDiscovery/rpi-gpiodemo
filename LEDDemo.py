@@ -1,8 +1,8 @@
 #Demonstration of 3 Color LED
-#Using GPIO 7 as Red, 11 as Green, 13 as Blue 
+#Using GPIO 7 as Red, 11 as Green, 13 as Blue
 
 import RPi.GPIO as GPIO
-import time 
+import time
 GPIO.setmode(GPIO.BOARD)
 
 RedLED=7

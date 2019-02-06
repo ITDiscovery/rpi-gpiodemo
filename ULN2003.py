@@ -4,14 +4,17 @@
 
 import RPi.GPIO as GPIO
 import time
- 
+# Setup for signal handling, cleanup on Ctrl-C
+import signal
+GPIO.setwarnings(False)
+
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 coil_A_1_pin = 24 # pink
 coil_A_2_pin = 26 # orange
 coil_B_1_pin = 19 # blue
 coil_B_2_pin = 18 # yellow
- 
+
 # adjust if different motor
 # Very important to match phase steps
 StepCount = 8
@@ -24,18 +27,29 @@ Seq[4] = [0,0,1,0]
 Seq[5] = [0,0,1,1]
 Seq[6] = [0,0,0,1]
 Seq[7] = [1,0,0,1]
- 
+
 GPIO.setup(coil_A_1_pin, GPIO.OUT)
 GPIO.setup(coil_A_2_pin, GPIO.OUT)
 GPIO.setup(coil_B_1_pin, GPIO.OUT)
 GPIO.setup(coil_B_2_pin, GPIO.OUT)
- 
+
+def sigint_handler(signum, frame):
+    GPIO.output(coil_A_1_pin,GPIO.LOW)
+    GPIO.output(coil_A_2_pin,GPIO.LOW)
+    GPIO.output(coil_B_1_pin,GPIO.LOW)
+    GPIO.output(coil_B_2_pin,GPIO.LOW)
+    print("Exit Signal Recieved!")
+    GPIO.cleanup
+    exit()
+
+signal.signal(signal.SIGINT, sigint_handler)
+
 def setStep(w1, w2, w3, w4):
     GPIO.output(coil_A_1_pin, w1)
     GPIO.output(coil_A_2_pin, w2)
     GPIO.output(coil_B_1_pin, w3)
     GPIO.output(coil_B_2_pin, w4)
- 
+
 def forward(delay, steps):
     for i in range(steps):
         for j in range(StepCount):
