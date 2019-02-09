@@ -34,7 +34,7 @@ The current demo RPi is an RPi Zero W with the following pinouts:
  DSP3 - VMA425 LED Display \
  DSP4 - WMA425 LED Display \
  L298N - Dual H-Bridge \
- Rly - Relay Module \
+ Srvo - Servo Motor \
  ULN2k3 - 5v Stepper Driver \
  TLC548 - A/D Converter \
  3xs - 3 Axis Accelorator \
