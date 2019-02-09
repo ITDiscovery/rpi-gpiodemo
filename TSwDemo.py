@@ -10,7 +10,7 @@ GreenLED=11
 BlueLED=13
 
 # Set 7 for Output as LED for Red
-GPIO.setup(TSw,GPIO.IN)
+GPIO.setup(TSw,GPIO.IN,pull_up_down=GPIO.PUD_UP)
 
 TSwState=True
 while True:

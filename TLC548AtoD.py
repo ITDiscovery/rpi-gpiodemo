@@ -35,9 +35,9 @@ def tlc548RX():
 def main():
     while True:
 	time.sleep(.1)
-	print(tlc548RX())
-	#volt = (tlc548RX()/255)*5
-        #print "Voltage: {0:5.4f}".format(volt)
+	#print(tlc548RX())
+	volt = (tlc548RX()/255.0)*5
+        print "Voltage: {0:5.4f}".format(volt)
 
 if __name__=="__main__":
     main()
