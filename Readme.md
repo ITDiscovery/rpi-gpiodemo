@@ -37,5 +37,5 @@ The current demo RPi is an RPi Zero W with the following pinouts:
  Srvo - Servo Motor \
  ULN2k3 - 5v Stepper Driver \
  TLC548 - A/D Converter \
- 3xs - 3 Axis Accelorator \
+ 3xs - 3 Axis Accelerometer \
  
